@@ -8,3 +8,5 @@ const company = new Company();
 console.log(user, company);
 
 console.log("shot");
+
+/// <reference types="@types/google.maps" />
