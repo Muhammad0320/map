@@ -1,15 +1,9 @@
-import { User } from "./User";
+// import { User } from "./User";
 // import { Company } from "./Company";
 
+// import "googlemaps";
+
 const mapEl: HTMLElement = document.getElementById("map")!;
-
-// const user = new User();
-
-// const company = new Company();
-
-// console.log(user, company);
-
-// console.log("shot");
 
 new google.maps.Map(mapEl, {
   zoom: 1,
