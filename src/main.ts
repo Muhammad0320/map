@@ -1,13 +1,15 @@
-// import { User } from "./User";
-// import { Company } from "./Company";
-
-// import "googlemaps";
+/// <reference types="@types/google.maps" />
 
 const mapEl: HTMLElement = document.getElementById("map")!;
 
-new google.maps.Map(mapEl, {
-  zoom: 1,
-  center: { lat: 0, lng: 0 },
-});
+window.onload = function () {
+  new google.maps.Map(mapEl, {
+    zoom: 1,
+    center: { lat: 0, lng: 0 },
+  });
+};
 
-/// <reference types="@types/google.maps" />
+// new google.maps.Map(mapEl, {
+//   zoom: 1,
+//   center: { lat: 0, lng: 0 },
+// });
