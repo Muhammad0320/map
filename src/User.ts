@@ -14,6 +14,10 @@ export class User {
       lng: faker.location.longitude(),
     };
   }
+
+  infoText() {
+    return `User name: ${this.name}`;
+  }
 }
 
 // AIzaSyDBWdeNbUGBz9T6wfMfpf78yoD-kMas6Icm
