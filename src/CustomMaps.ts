@@ -3,6 +3,8 @@ interface Mappable {
     lat: number;
     lng: number;
   };
+
+  infoText(): string;
 }
 
 class CustomMaps {
@@ -26,7 +28,7 @@ class CustomMaps {
 
     marker.addListener("click", () => {
       const infoWindow = new google.maps.InfoWindow({
-        content: "Hello world!",
+        content: mappable.infoText(),
       });
 
       infoWindow.open(this.googleMap, marker);
