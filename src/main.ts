@@ -1,15 +1,7 @@
 /// <reference types="@types/google.maps" />
 
-const mapEl: HTMLElement = document.getElementById("map")!;
+import CustomMaps from "./CustomMaps";
 
 window.onload = function () {
-  new google.maps.Map(mapEl, {
-    zoom: 1,
-    center: { lat: 0, lng: 0 },
-  });
+  new CustomMaps("map");
 };
-
-// new google.maps.Map(mapEl, {
-//   zoom: 1,
-//   center: { lat: 0, lng: 0 },
-// });
