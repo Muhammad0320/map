@@ -19,4 +19,8 @@ export class Company {
       lng: faker.location.longitude(),
     };
   }
+
+  infoText() {
+    return `<div>  <h1> ${this.name} </h1> <h3> ${this.catchPhrase} </h3> </div>`;
+  }
 }
