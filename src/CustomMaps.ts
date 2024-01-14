@@ -1,3 +1,10 @@
+interface Mappable {
+  location: {
+    lat: number;
+    lng: number;
+  };
+}
+
 class CustomMaps {
   private googleMap: google.maps.Map;
 
@@ -9,6 +16,13 @@ class CustomMaps {
         center: { lat: 0, lng: 0 },
       }
     );
+  }
+
+  addMarker(mappable: Mappable) {
+    new google.maps.Marker({
+      map: this.googleMap,
+      position: { ...mappable.location },
+    });
   }
 }
 
