@@ -1,6 +1,7 @@
 import { faker } from "@faker-js/faker";
+import { Mappable } from "./CustomMaps";
 
-export class Company  {
+export class Company implements Mappable {
   name: string;
   catchPhrase: string;
 
@@ -24,5 +25,3 @@ export class Company  {
     return `<div>  <h1> ${this.name} </h1> <h3> ${this.catchPhrase} </h3> </div>`;
   }
 }
-
-
