@@ -1,6 +1,6 @@
 import { faker } from "@faker-js/faker";
 
-export class Company {
+export class Company  {
   name: string;
   catchPhrase: string;
 
@@ -24,3 +24,5 @@ export class Company {
     return `<div>  <h1> ${this.name} </h1> <h3> ${this.catchPhrase} </h3> </div>`;
   }
 }
+
+
